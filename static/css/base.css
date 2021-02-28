@@ -3,8 +3,6 @@ html {
 }
 
 body {
-    background: url('/media/ms4-background-2.jpg') center center fixed;
-    background-size: cover;
     height: calc(100vh - 160px);
     color: #000;
     font-family: 'Special Elite';
@@ -30,7 +28,7 @@ body {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 200px;
 }
 
 .btn-black {
@@ -54,6 +52,16 @@ body {
 
 .border-black {
     border: 1px solid black !important;
+}
+
+.hr-dashed-grey {
+	border-top: 2px dashed #8c8b8b;
+}
+
+/* -------------------------------- Home page specific */
+.hero-background {
+    background: url('/media/ms4-background-2.jpg') center center fixed;
+    background-size: cover;
 }
 
 /* -------------------------------- Media Queries */
