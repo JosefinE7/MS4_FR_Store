@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: calc(100vh - 160px);
+    height: calc(140vh - 230px);
     color: #000;
     font-family: 'Special Elite';
 }
@@ -26,14 +26,14 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
     min-width: 200px;
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
 }
 
 .shop-now-button:hover,
@@ -43,7 +43,7 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: white;
+    color: #fff;
 }
 
 .text-black {
@@ -51,7 +51,11 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #000 !important;
+}
+
+.bg-black {
+    background: #000 !important; 
 }
 
 .hr-dashed-grey {
@@ -61,7 +65,8 @@ body {
 /* -------------------------------- Home page specific */
 .hero-background {
     background: url('/media/ms4-background-2.jpg') center center fixed;
-    background-size: cover;
+    background-size: cover; 
+    height: calc(100vh - 164px);
 }
 
 /* -------------------------------- Media Queries */
