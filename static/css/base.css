@@ -63,10 +63,17 @@ body {
 }
 
 /* -------------------------------- Home page specific */
+.home-page-item {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .hero-background {
-    background: url('/media/ms4-background-2.jpg') center center fixed;
+    background: rgb(196, 45, 45);/* url('/media/ms4-background-2.jpg') center center fixed; */
     background-size: cover; 
     height: calc(100vh - 164px);
+    width: 100%;
 }
 
 /* -------------------------------- Media Queries */
