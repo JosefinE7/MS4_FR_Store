@@ -58,8 +58,12 @@ body {
     background: #000 !important; 
 }
 
-.hr-dashed-grey {
+.hr-heading-grey {
 	border-top: 2px dashed #8c8b8b;
+}
+
+.hr-sm-grey {
+	border-top: 1px dashed #c5c1c1;
 }
 
 /* -------------------------------- Home page specific */
@@ -76,6 +80,11 @@ body {
     width: 100%;
 }
 
+/* -------------------------------- Home page specific */
+.products-baner {
+    margin-top: 155px;
+    padding-top: 50px;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
