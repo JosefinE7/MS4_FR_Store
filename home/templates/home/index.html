@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<!-- Hero image and text -->
 <div class="home-page-item h-100 hero-background">
     <div class="container h-100">
         <div class="row h-100 d-flex justify-content-center">
@@ -24,11 +25,12 @@
         </div>
     </div>
 </div>
+<!-- New releases -->
 <div class="home-page-item">
     <div class="container h-100"> 
         <div class="row h-100 d-flex justify-content-center">
             <div class="col-7 col-md-6 my-auto">
-                <h2 class="logo-font text-black text-center">New Realises</h2>
+                <h2 class="logo-font text-black text-center">New Releases</h2>
             </div>
         </div>
     </div>
@@ -36,14 +38,16 @@
 <div class="container">
     <div class="owl-carousel owl-theme"> 
         <div class="item">
+            {% for product in products %}
             <div class="card">
                 <img class="card-img-top" src="media/noimage.png" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">{{ product.name }}</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
+            {% endfor %}
         </div>
         <div class="item">
             <div class="card">
@@ -107,6 +111,7 @@
         loop:true,
         margin:10,
         nav:true,
+        navText: ["<i class='fa fa-lg fa-angle-left'></i>", "<i class='fa fa-lg fa-angle-right'></i>"],
         responsive:{
             0:{
                 items:1
