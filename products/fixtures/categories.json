@@ -27,16 +27,48 @@
     "pk": 4,
     "model": "products.category",
     "fields": {
-      "name": "home_decore",
-      "friendly_name": "Home Decore"
+      "name": "jackets",
+      "friendly_name": "Jackets"
     }
   },
   {
     "pk": 5,
     "model": "products.category",
     "fields": {
+      "name": "necklaces",
+      "friendly_name": "Necklaces"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+      "name": "bracelets",
+      "friendly_name": "Bracelets"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+      "name": "earrings",
+      "friendly_name": "Earrings"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
       "name": "new_arrivals",
       "friendly_name": "New Arrivals"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+      "name": "clearance",
+      "friendly_name": "Clearance"
     }
   }
 ]
