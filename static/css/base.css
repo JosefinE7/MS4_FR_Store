@@ -80,7 +80,7 @@ a.category-badge > span.badge:hover {
 }
 
 .hero-background {
-    background: rgb(196, 45, 45);/* url('/media/ms4-background-2.jpg') center center fixed; */
+    background: url('/media/hero4.jpg') center center ; 
     background-size: cover; 
     height: calc(100vh - 164px);
     width: 100%;
