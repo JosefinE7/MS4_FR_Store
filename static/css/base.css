@@ -36,6 +36,10 @@ body {
     color: #fff;
 }
 
+.shop-now-button {
+    text-shadow: 2px 2px 3px #000, 2px 2px 8px #F5F5DC;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -58,14 +62,13 @@ body {
     background: #000 !important; 
 }
 
-.hr-heading-grey {
-	border-top: 2px dashed #8c8b8b;
+.hr-heading-beige {
+	border-top: 2px dashed #F5F5DC;
 }
 
 .hr-sm-grey {
-	border-top: 1px dashed #c5c1c1;
+	border-top: 1px dashed #F5F5DC;
 }
-
 
 a.category-badge > span.badge:hover {
     background: #212529 !important;
@@ -86,6 +89,10 @@ a.category-badge > span.badge:hover {
     width: 100%;
 }
 
+.hero-heading {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px beige, 0 0 4px #fff;
+}
 /* ----------------- Home page - Owl Carousel */
 
 .owl-carousel .nav-btn{
