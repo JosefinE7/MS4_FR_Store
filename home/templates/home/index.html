@@ -105,7 +105,10 @@
 <div class="home-page-item">
     <h1>Instagram</h1>
 </div>
+{% endblock %}
 
+{% block postloadjs %}
+{{ block.super }}
 <script>
         $('.owl-carousel').owlCarousel({
         loop:true,
@@ -126,8 +129,6 @@
     })
 </script>
 {% endblock %}
-
-
 <!--
     {% for product in products %}
                         <div class="card h-100">
