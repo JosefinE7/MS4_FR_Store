@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid products-baner">
+        <div class="row">
+            <div class="col my-auto">
+                <hr class="w-25 hr-heading-beige">
+                <h2 class="logo-font text-center">Items You Like</h2>
+                <hr class="w-25 hr-heading-beige">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {% if like_items %}
+                        <div class="table-responsive rounded">
+                            {{ like_items }}
+                        </div>
+                    {% else %}
+                        <p class="lead mb-5">You have not liked any items</p>
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg border border-black">
+                            <span class="icon">
+                                <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="text-uppercase">Keep Browsing</span>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
