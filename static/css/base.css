@@ -36,6 +36,19 @@ body {
     color: #fff;
 }
 
+.btn-outline-black {
+    background: #fff;
+    color: #000 !important;
+    border: 1px solid #000;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: #000;
+    color: #fff !important;
+}
+
 .shop-now-button {
     text-shadow: 2px 2px 3px #000, 2px 2px 8px #F5F5DC;
 }
