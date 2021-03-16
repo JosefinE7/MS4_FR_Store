@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
-    'likes',
+    'like',
 ]
 
 MIDDLEWARE = [
@@ -75,7 +75,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'bag.contexts.bag_contents',
-                'likes.contexts.like_contents',
+                'like.contexts.like_contents',
             ],
         },
     },
