@@ -10,13 +10,13 @@ def like_contents(request):
     product_count = 0
     like = request.session.get('like', {})
 
-    for item_id, quantity in like.items():
+    for item_id, quantity_like in like.items():
         product = get_object_or_404(Product, pk=item_id)
-        total += quantity * product.price
-        product_count += quantity
+        total += quantity_like * product.price
+        product_count += quantity_like
         like_items.append({
             'item_id': item_id,
-            'quantity': quantity,
+            'quantity_like': quantity_like,
             'product': product,
         })
 
