@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block content %}
     <div class="container-fluid products-baner "><!--container mb-2-->
@@ -73,7 +74,7 @@
                                                 data-product_size="{{ item.size }}"><small>Remove</small></a>
                                         </td>
                                         <td class="p-3">
-                                            <p class="my-0">${{ item.product.price }}</p>
+                                            <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                         </td>
                                     </tr>
                                 {% endfor %}
