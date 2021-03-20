@@ -248,6 +248,12 @@ a.category-badge > span.badge:hover {
     margin-top: 155px;
     padding-top: 50px;
 }
+
+.image-container {
+    
+    overflow-x: hidden;
+    overflow-y: visible;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
