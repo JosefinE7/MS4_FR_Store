@@ -197,6 +197,42 @@ a.category-badge > span.badge:hover {
     font-weight: bold;
     text-shadow: 2px 2px 4px beige, 0 0 4px #fff;
 }
+
+/* ----------------------- Home page - Instagram specific
+  copied from https://www.juicer.io/blog/create-a-custom-embeddable-aggregate-social-media-feed-with-css-and-juicer  */
+
+
+.juicer-feed.modern li.feed-item {
+  background: transparent;
+  border: #A9A9A9;
+}
+
+.j-poster h3 {
+    font-size: 14px !important;
+    color: white;
+    font-family: 'Special Elite';
+}
+
+.juicer-feed.modern .j-poster {
+  padding: 14px 0 12px;
+}
+
+.juicer-feed.modern .j-text {
+  padding: 20px 0;
+  color: #000;
+  font-family: 'Special Elite';
+}
+
+.j-message {
+    font-family: 'Special Elite';
+}
+
+.juicer-button {
+    border-radius: 1px !important ;
+    font-size: 16px !important;
+    font-family: 'Special Elite';
+}
+
 /* ----------------- Home page - Owl Carousel */
 
 .owl-carousel .nav-btn{
