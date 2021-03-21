@@ -250,9 +250,10 @@ a.category-badge > span.badge:hover {
 }
 
 .image-container {
-    
+    height: 400px;
+    width: 380px;
     overflow-x: hidden;
-    overflow-y: visible;
+    overflow-y: hidden;
 }
 /* -------------------------------- Media Queries */
 
