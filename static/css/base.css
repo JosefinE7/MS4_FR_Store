@@ -26,31 +26,28 @@ body {
 }
 
 .shop-now-button {
-    background: #000;
-    color: #fff;
     min-width: 200px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .btn-black {
     background: #000;
     color: #fff;
+    border: solid 2px #000;
 }
 
 .btn-outline-black {
     background: #fff;
     color: #000 !important;
-    border: 1px solid #000;
+    border: 2px solid #000;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: #000;
+    background: #000 !important;
     color: #fff !important;
-}
-
-.shop-now-button {
-    text-shadow: 2px 2px 3px #000, 2px 2px 8px #F5F5DC;
 }
 
 .shop-now-button:hover,
@@ -198,29 +195,27 @@ a.category-badge > span.badge:hover {
     text-shadow: 2px 2px 4px beige, 0 0 4px #fff;
 }
 
-/* ----------------------- Home page - Instagram specific
-  copied from https://www.juicer.io/blog/create-a-custom-embeddable-aggregate-social-media-feed-with-css-and-juicer  */
+/* ---------------- Home page - Instagram specific
+  copied from https://juicer.io/blog/create-a-custom-embeddable-aggregate-social-media-feed-with-css-and-juicer  */
 
 
-.juicer-feed.modern li.feed-item {
+.juicer-feed li.feed-item {
   background: transparent;
-  border: #A9A9A9;
+  border: 1px solid #DCDCDC !important;
 }
+
+.juicer-feed .j-message p {
+    width: 100%;
+    display: block;
+    float: none;
+    color: #000;
+    font-family: 'Special Elite';
+  }
 
 .j-poster h3 {
     font-size: 14px !important;
     color: white;
     font-family: 'Special Elite';
-}
-
-.juicer-feed.modern .j-poster {
-  padding: 14px 0 12px;
-}
-
-.juicer-feed.modern .j-text {
-  padding: 20px 0;
-  color: #000;
-  font-family: 'Special Elite';
 }
 
 .j-message {
@@ -232,6 +227,7 @@ a.category-badge > span.badge:hover {
     font-size: 16px !important;
     font-family: 'Special Elite';
 }
+
 
 /* ----------------- Home page - Owl Carousel */
 
@@ -248,6 +244,8 @@ a.category-badge > span.badge:hover {
     margin-top: 155px;
     padding-top: 50px;
 }
+
+bt
 
 .image-container {
     height: 400px;

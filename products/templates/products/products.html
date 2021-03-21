@@ -3,19 +3,20 @@
 
 {% block content %}
 <div class="container-fluid products-baner">
-    <div class="">
+    <div>
         <!--d-flex justify-content-center || class="row" previous extra code-->
         <div class="col my-auto">
-            <h2 class="logo-font text-center">Products</h2>
-            <div class="d-flex justify-content-center">
-                {% for c in current_categories %}
-                <a class="category-badge text-decoration-one px-1" href="{% url 'products' %}?category={{ c.name }}">
-                    <span
-                        class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
-                </a>
-                {% endfor %}
-            </div>
-            <hr class="w-25 hr-heading-grey">
+            <h2 class="logo-font text-center">Products/h2>
+                <div class="d-flex justify-content-center">
+                    {% for c in current_categories %}
+                    <a class="category-badge text-decoration-one px-1"
+                        href="{% url 'products' %}?category={{ c.name }}">
+                        <span
+                            class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                    </a>
+                    {% endfor %}
+                </div>
+                <hr class="w-25 hr-heading-grey">
         </div>
     </div>
     <div class="row">
