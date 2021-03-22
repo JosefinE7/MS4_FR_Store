@@ -1,48 +1,73 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# FutureRetro
 
-Welcome JosefinE7,
+text 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## UX
+### Project Goal
 
-## Gitpod Reminders
+#### Shoppers goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+#### Company goals
 
-`python3 -m http.server`
+### User Stories
 
-A blue button should appear to click: *Make Public*,
+As a FutureRetro customer:
 
-Another blue button should appear to click: *Open Browser*.
+As owner of FutureRetro the store:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Design Choices
 
-A blue button should appear to click: *Make Public*,
+**Fonts**
 
-Another blue button should appear to click: *Open Browser*.
+**Icons**
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**Colors**
 
-## Updates Since The Instructional Video
+**Styling**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+**Product Images**
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Wireframes
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* About page:
+    * [Large screen](https://ibb.co/5M8mwWJ)
+    * [Medium screen](#)
+    * [Small screen](#)
+* Bag view:
+    * [Large screen](https://ibb.co/42dwyXr)
+    * [Medium screen]()
+    * [Small screen]()
+* Home page view:
+    * [Large screen](https://ibb.co/TKZBJng)
+    * [Large screen all dropdownbars open](https://ibb.co/tZ0B9YP)
+    * [Medium screen](https://ibb.co/nfvFt6k)
+    * [Small screen](https://ibb.co/fDWTCTb)
+* Likes view:
+    * [Large screen](https://ibb.co/hL7yxcm)
+    * [Medium screen](#)
+    * [Small screen](#)
+* Log in/Register view:
+    * [Large screen](https://ibb.co/CM8jzBB)
+    * [Medium screen](https://ibb.co/K69Y0g6)
+    * [Small screen](https://ibb.co/fdZnpRY)
+* Payment view:
+    * [Large screen](https://ibb.co/qW80Cpj)
+    * [Medium screen](#)
+    * [Small screen](#)
+* Personal page view:
+    * [Large screen](https://ibb.co/1zYgn64)
+    * [Medium screen](#)
+    * [Small screen](#)
+* Product detail page view:
+    * [Large screen](https://ibb.co/pyyVQ9h)
+    * [Medium screen](https://ibb.co/4MSNwmr)
+    * [Small screen](https://ibb.co/Rcqgg12)
+* Product page view:
+    * [Large screen](https://ibb.co/3Ts31Yn)
+    * [Medium screen](https://ibb.co/ZJRMSbs)
+    * [Small screen](https://ibb.co/QcH27mt)
+* Log in view:
+    * [Large screen]()
+    * [Medium screen]()
+    * [Small screen]()
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
-
-background link:
-https://pixnio.com/computer-arts/photomontage/photomontage-flowers-paper-watercolor-painting-art
