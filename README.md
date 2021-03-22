@@ -30,7 +30,7 @@ As owner of FutureRetro the store:
 ### Wireframes
 
 * About page:
-    * [Large screen](https://ibb.co/5M8mwWJ)
+    * [Large screen](https://ibb.co/5M8mwWJ){:target="_blank"}
     * [Medium screen](#)
     * [Small screen](#)
 * Bag view:
