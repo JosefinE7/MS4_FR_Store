@@ -30,44 +30,41 @@ As owner of FutureRetro the store:
 ### Wireframes
 
 * About page:
-    * [Large screen](https://ibb.co/5M8mwWJ){:target="_blank"}
+    * <a href="https://ibb.co/5M8mwWJ" target="_blank">Large screen</a>
     * [Medium screen](#)
     * [Small screen](#)
 * Bag view:
-    * [Large screen](https://ibb.co/42dwyXr)
+    * <a href="https://ibb.co/42dwyXr" target="_blank">Large screen</a>
     * [Medium screen]()
     * [Small screen]()
 * Home page view:
-    * [Large screen](https://ibb.co/TKZBJng)
-    * [Large screen all dropdownbars open](https://ibb.co/tZ0B9YP)
-    * [Medium screen](https://ibb.co/nfvFt6k)
-    * [Small screen](https://ibb.co/fDWTCTb)
+    * <a href="https://ibb.co/TKZBJng" target="_blank">Large screen</a>
+    * <a href="https://ibb.co/tZ0B9YP" target="_blank">Large screen all dropdownbars open</a> 
+    * <a href="https://ibb.co/nfvFt6k" target="_blank">Medium screen</a>
+    * <a href="https://ibb.co/fDWTCTb" target="_blank">Small screen</a>
 * Likes view:
-    * [Large screen](https://ibb.co/hL7yxcm)
-    * [Medium screen](#)
-    * [Small screen](#)
+    * <a href="https://ibb.co/hL7yxcm" target="_blank">Large screen</a>
+    * <a href="#" target="_blank">Medium screen</a>
+    * <a href="#" target="_blank">Small screen</a>
 * Log in/Register view:
-    * [Large screen](https://ibb.co/CM8jzBB)
-    * [Medium screen](https://ibb.co/K69Y0g6)
-    * [Small screen](https://ibb.co/fdZnpRY)
+    * <a href="https://ibb.co/CM8jzBB" target="_blank">Large screen</a>
+    * <a href="https://ibb.co/K69Y0g6" target="_blank">Medium screen</a>
+    * <a href="https://ibb.co/fdZnpRY" target="_blank">Small screen</a>
 * Payment view:
-    * [Large screen](https://ibb.co/qW80Cpj)
-    * [Medium screen](#)
-    * [Small screen](#)
+    * <a href="https://ibb.co/qW80Cpj" target="_blank">Large screen</a>
+    * <a href="#" target="_blank">Medium screen</a>
+    * <a href="#" target="_blank">Small screen</a>
 * Personal page view:
     * [Large screen](https://ibb.co/1zYgn64)
-    * [Medium screen](#)
-    * [Small screen](#)
+    * <a href="#" target="_blank">Medium screen</a>
+    * <a href="#" target="_blank">Small screen</a>
 * Product detail page view:
-    * [Large screen](https://ibb.co/pyyVQ9h)
-    * [Medium screen](https://ibb.co/4MSNwmr)
-    * [Small screen](https://ibb.co/Rcqgg12)
+    * <a href="https://ibb.co/pyyVQ9h" target="_blank">Large screen</a>
+    * <a href="https://ibb.co/4MSNwmr" target="_blank">Medium screen</a>
+    * <a href="https://ibb.co/Rcqgg12" target="_blank">Small screen</a>
 * Product page view:
-    * [Large screen](https://ibb.co/3Ts31Yn)
-    * [Medium screen](https://ibb.co/ZJRMSbs)
-    * [Small screen](https://ibb.co/QcH27mt)
-* Log in view:
-    * [Large screen]()
-    * [Medium screen]()
-    * [Small screen]()
+    * <a href="https://ibb.co/3Ts31Yn" target="_blank">Large screen</a>
+    * <a href="https://ibb.co/ZJRMSbs" target="_blank">Medium screen</a>
+    * <a href="https://ibb.co/QcH27mt" target="_blank">Small screen</a>
+
 
