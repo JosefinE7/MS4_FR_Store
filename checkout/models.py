@@ -6,7 +6,10 @@ from django.conf import settings
 
 from products.models import Product
 
-# Models below copied from Code Institute Boutique Ado project
+"""
+    Entire code written by following Code Institute Boutique Ado project
+
+"""
 
 
 class Order(models.Model):
