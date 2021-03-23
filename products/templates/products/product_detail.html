@@ -10,7 +10,7 @@
     <div class="row">
         <!--d-flex justify-content-center = previous extra code-->
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            <div class="my-5 image-container">
+            <div class="my-5 ">
                 <div class="">
                     {% if product.image %}
                     <a href="{{ product.image.url }}" target="_blank">
@@ -26,7 +26,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
-                <p class="mb-0">{{ product.name }}</p>
+                <h3 class="mb-0 p-2">{{ product.name }}</h3>
                 <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
