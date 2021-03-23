@@ -1,1 +1,1 @@
-web: gunicorn futureretro-store.wsgi:application
+web: gunicorn future_retro.wsgi:application
