@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'checkout',
 
     # Other
-    'storages'
+    'storages',
 ]
 
 MIDDLEWARE = [
