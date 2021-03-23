@@ -7,6 +7,7 @@
         <!--d-flex justify-content-center || class="row" previous extra code-->
         <div class="col my-auto">
             <h2 class="logo-font text-center">Products</h2>
+            <hr class="hr-heading-beige w-25">
             <div class="d-flex justify-content-center">
                 {% for c in current_categories %}
                 <a class="category-badge text-decoration-one px-1" href="{% url 'products' %}?category={{ c.name }}">
@@ -15,7 +16,6 @@
                 </a>
                 {% endfor %}
             </div>
-            <hr class="w-25 hr-heading-grey">
         </div>
     </div>
     <div class="row">
