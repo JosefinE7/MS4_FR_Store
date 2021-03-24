@@ -51,6 +51,7 @@
                     Frälsningsarmén och Blocket. It is my own interpretation of the timeless femininity of this
                     era and is intended for women in all walks of life: from the businesswoman to the stay-at-home
                     mom. Every woman deserves to feel feminine and beautiful!
+                    <a class="update-link text-info" href="#">For more information about FutureRetro click here!</a>
                 </p>
                 <p class="text-center">
                     Love,
@@ -160,10 +161,30 @@
         </ul>
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="d-block d-lg-none">
+                <div class="btt-button shadow-sm rounded-0 border border-black">
+                    <a class="btt-link d-flex h-100">
+                        <i class="fas fa-lg fa-arrow-up mx-auto my-auto"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
+
 {% include 'home/includes/owl_carousel_script.html' %}
 <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
 {% endblock %}
