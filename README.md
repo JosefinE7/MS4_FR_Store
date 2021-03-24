@@ -141,12 +141,12 @@ the impression of a homemade and cozy aesthetic.
 
 * About page:
     * [Large screen](https://ibb.co/5M8mwWJ)
-    * [Medium screen](#)
-    * [Small screen](#)
+    * [Medium screen](https://ibb.co/w44q78r)
+    * [Small screen](https://ibb.co/q9j5sGK)
 * Bag view:
     * [Large screen](https://ibb.co/42dwyXr)
-    * [Medium screen](#)
-    * [Small screen](#)
+    * [Medium screen](https://ibb.co/wQxL4Pn)
+    * [Small screen](https://ibb.co/YXjDF1V)
 * Home page view:
     * [Large screen](https://ibb.co/TKZBJng)
     * [Large screen all dropdownbars open](https://ibb.co/tZ0B9YP)
