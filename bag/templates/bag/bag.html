@@ -80,19 +80,19 @@
                         </thead>
                         {% for item in bag_items %}
                         <tr>
-                            <td class="p-3 w-5">
+                            <td class="p-3 w-5 h-50">
                                 {% include 'bag/product-image.html' %}
                             </td>
-                            <td class="p-3">
+                            <td class="p-3 pt-4">
                                 {% include 'bag/product-info.html' %}
                             </td>
-                            <td class="p-3">
+                            <td class="p-3 pt-4">
                                 <p class="my-0">${{ item.product.price }}</p>
                             </td>
-                            <td class="p-3 w-25">
+                            <td class="p-3 w-25 pt-4">
                                 {% include 'bag/quantity-form.html' %}
                             </td>
-                            <td class="p-3">
+                            <td class="p-3 pt-4">
                                 <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                             </td>
                         </tr>
