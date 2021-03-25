@@ -238,6 +238,11 @@ a.category-badge > span.badge:hover {
       top: 100px !important;
   }
 
+.image-home-carousel {
+    height: 50% !important;
+    width: 100% !important;
+}
+
 /* -------------------------------- Product page specific */
 .products-baner {
     margin-top: 155px;

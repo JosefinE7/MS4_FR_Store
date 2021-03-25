@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block extra_css %}
 <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
@@ -72,80 +73,27 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    
+    <div class="container w-75">
         <div class="owl-carousel owl-theme">
-            <div class="item">
-                <div class="card">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Product name</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+            {% for product in products %}
+                <div class="item">
+                    <div class="card">
+                        <div class="">
+                            {% if product.image %}
+                                <img class=" " src="{{ product.image.url }}" alt="{{ product.name }}">
+                            {% else %}
+                                <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            {% endif %}
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text">${{ product.price }}</p>
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Product name2</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Product name3</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Product name4</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Product name5</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="card">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Product name6</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
