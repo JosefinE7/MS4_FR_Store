@@ -9,7 +9,7 @@ import stripe
 
 
 """
-    Entire code written following Code Institutes Boutique Ado project
+    Entire code written following Code Institutes Boutique Ado project.
 """
 
 
