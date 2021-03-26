@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+<!-- Entire code written following Code Institutes Boutique Ado project -->
+
+{% block content %}
+<div class="container-fluid products-baner ">
+    <!--container mb-2-->
+    <div class="row">
+        <div class="col my-auto">
+            <hr class="w-25 hr-heading-beige">
+            <h2 class="logo-font text-center">Thank you!</h2>
+            <hr class="w-25 hr-heading-beige">
+        </div>
+        <div class="col my-auto">
+            <p>
+                Thank you for shopping at FutureRetro today!
+                Your order information is displayed below and 
+                a copy will be sent to {{ order.email }}.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-7"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-7 text-right">
+                <a href="{% url 'products' %}?category=new_arrivals" class="btn btn-black rounded-0 my-2">
+                    <span class="icon mr-2">
+                        <i class="fas fa-store-alt"></i>
+                    </span>
+                    <span class="text-uppercase">Check out the store newbies!</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
