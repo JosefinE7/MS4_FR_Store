@@ -29,7 +29,6 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['futureretro-store.herokuapp.com', 'localhost']
 
-
 # Application definition
 
 INSTALLED_APPS = [
