@@ -196,4 +196,47 @@ the impression of a homemade and cozy aesthetic.
 
 ### Media
 
+All images for this project are from the website Unsplash, the images listed below are 
+divided into sections of different photographers with links directly to the picture on their 
+respective profile on Unsplash.
+
+
+#### Product Images
+
+**engin akyurt**
+
+[photo-1591369822096-ffd140ec948f.jpg](https://unsplash.com/photos/TDOClniEwmI)
+
+**Laura Chouette**
+
+[photo-1584361117895-6dce65e3d843.jpg](https://unsplash.com/photos/ybcE7B-erB8)
+[photo-1597150094869-f908e8c921b5.jpg](https://unsplash.com/photos/PoLuiquHGUg)
+[photo-1598626247584-d958078f8aa9.jpg](https://unsplash.com/photos/co8kxEYRPTA)
+[photo-1583846539095-4dd7d202b00f.jpg](https://unsplash.com/photos/EVQb3eIvNdM)
+[photo-1608234808066-453aa67d0bee.jpg](https://unsplash.com/photos/FH3NISMbXMQ)
+
+**Joeyy Lee**
+
+[photo-1613470119222-14479b4d0f46.jpg](https://unsplash.com/photos/1dEjaCd03z8)
+[photo-1613470141975-bf67312499bd.jpg](https://unsplash.com/photos/i8RHh4yB1us)
+[photo-1613470124212-8d2d0c791b53.jpg ](https://unsplash.com/photos/69wZpIbgMgE)
+[photo-1596944946054-85fae2e50d5e.jpg](https://unsplash.com/photos/OibaEuEfpeg)
+[photo-1596944924616-7b38e7cfac36.jpg](https://unsplash.com/photos/onU-LlrPs8I)
+[photo-1609245340409-cad2474ab1d5.jpg](https://unsplash.com/photos/ImEzF9B91Mk)
+
+**Ussama Azam**
+
+[photo-1572804013309-59a88b7e92f1.jpg](https://unsplash.com/photos/5IcEBmSOQq0)
+
+**Oleg Ivanov**
+
+[photo-1542295669297-4d352b042bca.jpg](https://unsplash.com/photos/sg_gRhbYXhc)
+
+#### Other Images
+
+**Juan Manuel Aguilar**
+
+[hero3.jpg](https://unsplash.com/photos/v_wZAoMWy9s)
+
+
 ### Acknowledgements
