@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- Entire code written following Code Institutes Boutique Ado project -->
+
+{% block content %}
+<div class="container-fluid products-baner ">
+    <!--container mb-2-->
+    <div class="row">
+        <div class="col my-auto">
+            <hr class="w-25 hr-heading-beige">
+            <h2 class="logo-font text-center">Rating Products</h2>
+            <hr class="w-25 hr-heading-beige">
+            <h5 class="text-muted text-center">Share your thoughts!</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3">
+            <div class=" d-flex justify-content-center">
+                <div class="card  style="width: 18rem;">
+                    {% if product.image %}
+                        <div>
+                            <img class="card-img-top" src="{{ product.image.url }}"
+                                alt="{{ product.name }}">
+                        </div>
+                    {% else %}
+                        <div>
+                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ product.name }}">
+                        </div>
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">${{ product.price }}</p>
+                    </div>
+                </div>
+            </div>
+            <form method="POST" action="{% url 'rating_products' product.id %}" class="form mb-2">
+                {% csrf_token %}
+                {{ form | crispy }}
+                {% if request.user.is_authenticated %}
+                    <div class="text-center">
+                        <a class="btn btn-outline-black rounded-0" href="{% url 'product_detail' product.id %}">
+                            Cancel
+                        </a>
+                        <button class="btn btn-outline-black rounded-0" type="submit"><!--name="action"-->
+                            Add Review
+                        </button>
+                    </div>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

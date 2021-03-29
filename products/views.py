@@ -3,9 +3,10 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.contrib.auth.models import User
 
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, RatingProductsForm
 
 
 def all_products(request):
@@ -141,3 +142,29 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def rating_products(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    user = request.user
+
+    if request.method == 'POST':
+        form = RatingProductsForm(request.POST)
+        if form.is_valid():
+            rate = form.save(commit=False)
+            rate.user = user
+            rate.product = product
+            rate.save()
+            messages.success(request, 'Your review has been added!')
+            return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        form = RatingProductsForm()
+
+    template = 'products/rating_products.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
