@@ -35,12 +35,14 @@
                     </a>
                 </p>
                 {% endif %}
-
+                {% if rating_products %}
                     <p class="small mt-1 mb-0">
                         <span class="title"><i class="fas fa-star"></i>Rated:</span>
                         <b>{{ rating_avg.rate__avg  }}/5.0 </b>by <b>{{ rating_count }}</b> Members
                     </p>
-
+                {% else %}
+                    <p class="small mt-1 mb-0"><i class="fas fa-star"></i>No Ratings Yet</p>
+                {% endif %}
                 {% if request.user.is_superuser %}
                     <small class="ml-3">
                         <a href="{% url 'edit_product' product.id %}">Edit</a> | 
@@ -48,7 +50,7 @@
                     </small>
                 {% endif %}
                 <p class="mt-3">{{ product.description }}</p>
-                <form class="form" action="{% url 'add_to_like' product.id %}" method="POST">
+                <form class="form" action="" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
                         <div class="form-group">
@@ -147,6 +149,7 @@
             <span class="text-uppercase">Rate Product</span>
         </a>
     </div>
+    {% if rating_products %}
     <div class="row"> 
         <div class="col-12 col-lg-8 offset-lg-2 py-3 accordion-scroll">
             <div class="accordion" id="accordionExample">
@@ -172,6 +175,9 @@
             </div>
         </div>
     </div>
+    {% else %}
+        <p class="text-center py-2">No ratings have been made yet!</p>
+    {% endif %}
 </div>    
 
 {% endblock %}
