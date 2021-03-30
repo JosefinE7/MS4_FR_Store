@@ -102,8 +102,8 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if like_items %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                            href="#">
+                        <a class="{% if add_product_to_like %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                            href="{% url 'liked_product' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-heart fa-lg text-danger"></i></div>
                                 <p class="my-0">

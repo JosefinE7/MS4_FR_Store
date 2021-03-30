@@ -11,4 +11,5 @@ urlpatterns = [
          views.rating_products, name='rating_products'),
     path('add_product_to_like/<int:product_id>/',
          views.add_product_to_like, name='add_product_to_like'),
+    path('liked_product/', views.liked_product, name='liked_product'),
 ]

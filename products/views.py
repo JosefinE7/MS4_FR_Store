@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -185,6 +185,22 @@ def rating_products(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def liked_product(request, username):
+    product = get_object_or_404(Product)
+    user = get_object_or_404(User, username=username)
+    profile = UserProfile.objects.get(user=user)
+
+    like_list = profile.favorites.all(product)
+
+    context = {
+        'profile': profile,
+        'like_list': like_list,
+    }
+
+    template = 'products/liked_product.html'
+    return HttpResponse(template.render(context, request))
 
 
 def add_product_to_like(request, product_id):
