@@ -187,22 +187,25 @@ def rating_products(request, product_id):
     return render(request, template, context)
 
 
-def liked_product(request, username):
-    product = get_object_or_404(Product)
-    user = get_object_or_404(User, username=username)
+@login_required
+def liked_product(request):
+    product = Product.objects.all()
+    user = request.user
     profile = UserProfile.objects.get(user=user)
 
-    like_list = profile.favorites.all(product)
+    like_list = profile.favorites.all()
 
+    template = 'products/liked_product.html'
     context = {
         'profile': profile,
+        'product': product,
         'like_list': like_list,
     }
 
-    template = 'products/liked_product.html'
-    return HttpResponse(template.render(context, request))
+    return render(request, template, context)
 
 
+@login_required
 def add_product_to_like(request, product_id):
     product = Product.objects.get(id=product_id)
     user = request.user

@@ -2,40 +2,55 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid products-baner">
-    <div>
-        <!--d-flex justify-content-center || class="row" previous extra code-->
+<div class="container-fluid products-baner ">
+    <!--container mb-2-->
+    <div class="row">
         <div class="col my-auto">
-            <h2 class="logo-font text-center">Products</h2>
-            <hr class="hr-heading-beige w-25">
+            <hr class="w-25 hr-heading-beige">
+            <h2 class="logo-font text-center">Your Likes</h2>
+            <hr class="w-25 hr-heading-beige">
         </div>
     </div>
-    <div class="container w-75">
-        <div class="row">
-
-                <div class="item">
-                    <div class="card">
-                        <div class="">
-                            {% if product.image %}
-                                <img class=" " src="{{ product.image.url }}" alt="{{ product.name }}">
+    <div class="row">
+        <div class="product-container col-10 offset-1">
+            <div class="row">
+                {% for list_item in like_list %}
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card h-100">
+                            {% if list_item.image %}
+                            <a>
+                                <img class="card-img-top img-fluid" src="{{ list_item.image.url }}" alt="{{ list_item.name }}">
+                            </a>
                             {% else %}
-                                <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            <a>
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                    alt="{{ list_item.name }}">
+                            </a>
                             {% endif %}
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">{{ product.name }}</h5>
-                            <p class="card-text">${{ product.price }}</p>
-                            <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">Product Detail</a>
+                            <div class="card-body pb-0">
+                                <p class="mb-0">{{ list_item.name }}</p>
+                            </div>
+                            <div class="card-footer bg-white pt-0 border-0 text-left">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="lead mb-0 text-left font-weight-bold">${{ list_item.price }}</p>
+                                        {% if list_item.category %}
+                                        <p class="small mt-1 mb-0">
+                                            <a class="text-muted"
+                                                href="{% url 'products' %}?category={{ product.category.name }}">
+                                                <i class="fas fa-tag mr-1"></i>{{ list_item.category.friendly_name }}
+                                            </a>
+                                        </p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
+                {% endfor %}
+            </div>
         </div>
-    </div>
+    </div>    
 </div>
-<div class="btt-button shadow-sm rounded-0 border border-black">
-    <a class="btt-link d-flex h-100">
-        <i class="fas fa-lg fa-arrow-up mx-auto my-auto"></i>
-    </a>
-</div>
+
 {% endblock %}
