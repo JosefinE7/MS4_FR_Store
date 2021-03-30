@@ -188,10 +188,10 @@ def rating_products(request, product_id):
 
 
 def add_product_to_like(request, product_id):
-    product = Product.objects.get(product_id=product_id)
+    product = Product.objects.get(id=product_id)
     user = request.user
-    profile = Profile.objects(user=user)
+    profile = UserProfile.objects.get(user=user)
 
-    profile.favorites.add(Product.name)
+    profile.favorites.add(product)
 
     return redirect(reverse('product_detail', args=[product.id]))
