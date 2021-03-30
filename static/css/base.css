@@ -65,7 +65,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid #000 !important;
+    border: 2px solid #000 !important;
 }
 
 .bg-black {
@@ -308,6 +308,11 @@ a.category-badge > span.badge:hover {
     width: 380px;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+.accordion-scroll {
+  max-height: 350px;
+  overflow-y: auto;
 }
 /* -------------------------------- Media Queries */
 

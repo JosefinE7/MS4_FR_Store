@@ -4,8 +4,9 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.models import User
+from django.db.models import Avg
 
-from .models import Product, Category
+from .models import Product, Category, RatingProducts
 from .forms import ProductForm, RatingProductsForm
 
 
@@ -65,9 +66,15 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    rating_products = RatingProducts.objects.filter(product=product)
+    rating_avg = rating_products.aggregate(Avg('rate'))
+    rating_count = rating_products.count()
 
     context = {
         'product': product,
+        'rating_products': rating_products,
+        'rating_avg': rating_avg,
+        'rating_count': rating_count,
     }
 
     return render(request, 'products/product_detail.html', context)

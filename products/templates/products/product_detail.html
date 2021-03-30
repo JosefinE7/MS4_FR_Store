@@ -35,6 +35,12 @@
                     </a>
                 </p>
                 {% endif %}
+
+                    <p class="small mt-1 mb-0">
+                        <span class="title"><i class="fas fa-star"></i>Rated:</span>
+                        <b>{{ rating_avg.rate__avg  }}/5.0 </b>by <b>{{ rating_count }}</b> Members
+                    </p>
+
                 {% if request.user.is_superuser %}
                     <small class="ml-3">
                         <a href="{% url 'edit_product' product.id %}">Edit</a> | 
@@ -104,7 +110,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-12">
                             <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                 <span class="icon">
@@ -118,12 +123,7 @@
                                     <i class="fas fa-shopping-bag"></i>
                                 </span>
                             </button>
-                            <a href="{% url 'rating_products' product.id %}" class="btn btn-outline-black rounded-0 mt-5">
-                                <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="text-uppercase">Rate Product</span>
-                            </a>
+                            
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         {% endwith %}
@@ -133,6 +133,47 @@
         </div>
     </div>
 </div>
+<!-- Code structre from byronlara5 in django_imdb_youtube on GitHub
+                        https://github.com/byronlara5/django_imdb_youtube/blob/master/imdb_clone/templates/movie_details.html-->
+<div class="container">
+    <h3 class="text-center pt-3">Product Ratings</h3>
+    <hr class="hr-heading-beige w-25">
+    <div class="d-flex justify-content-center">
+        
+        <a href="{% url 'rating_products' product.id %}" class="btn btn-outline-black rounded-0 mt-2">
+            <span class="icon">
+                <i class="fas fa-star"></i>
+            </span>
+            <span class="text-uppercase">Rate Product</span>
+        </a>
+    </div>
+    <div class="row"> 
+        <div class="col-12 col-lg-8 offset-lg-2 py-3 accordion-scroll">
+            <div class="accordion" id="accordionExample">
+                {% for rating_product in rating_products %}
+                    <div class="card  rounded-0">
+                        <div class="card-header bg-black border-black" id="headingOne">
+                            <h2 class="mb-0 ">
+                                <button class="btn text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <strong>
+                                        <i class="fas fa-user fa-lg"></i> @{{ rating_product.user.username }} | 
+                                        Item Rating: {{ rating_product.rate }} / 5<icon class="fas fa-star"></icon>
+                                    </strong>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body border-black">
+                                <i class="fas fa-pen fa-lg"></i> {{ rating_product.rate_comment }}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>    
+
 {% endblock %}
 
 {% block postloadjs %}
