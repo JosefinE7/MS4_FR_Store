@@ -59,15 +59,16 @@
                                     min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_like_{{ product.id }}">
                             </div>
                         </div>
-                        <div class="col-12">
+                        <form action="#" method="POST">
+                            {% csrf_token %}
                             <button type="submit" class="btn btn-black btn-outline-black rounded-0 text-uppercase mt-1"
-                                name="like_button" data-item_id="{{ product.id }}" value="1">
+                                name="like_button" value="{{ product.id }}">
                                 Add to Likes
                                 <span class="icon">
                                     <i class="fas fa-lg fa-heart text-danger"></i>
                                 </span>
                             </button>
-                        </div>
+                        </form>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
                 </form>

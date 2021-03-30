@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'home',
     'products',
     'bag',
-    'like',
     'checkout',
     'profiles',
 
@@ -84,7 +83,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
-                'like.contexts.like_contents',
+
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',

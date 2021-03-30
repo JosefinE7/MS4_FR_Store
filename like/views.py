@@ -1,12 +1,19 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, reverse, get_object_or_404
+from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
 
 from products.models import Product
+from .models import LikeProducts
 
-from .models import Likes
+
+def view_like(request):
+    """ A view to renders the likes contents page """
+
+    return render(request, 'like/view_likes.html')
 
 
-def like(request, username, product_id):
-    user_liking = request.user
-    product = Product.objects.get(product_id=product_id)
-    like = Likes.objects.get(user=)
+def like_post(request, product_id):
+    product = get_object_or_404(Product, id=request.POST.get('like_button'))
+    likes = 
+    post.likes.add(request.user)
+    return HttpResponseRedirect(reverse('product_detail'), args=[str(product_id)])
