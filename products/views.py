@@ -6,6 +6,8 @@ from django.db.models.functions import Lower
 from django.contrib.auth.models import User
 from django.db.models import Avg
 
+from profiles.models import UserProfile
+
 from .models import Product, Category, RatingProducts
 from .forms import ProductForm, RatingProductsForm
 
@@ -69,12 +71,20 @@ def product_detail(request, product_id):
     rating_products = RatingProducts.objects.filter(product=product)
     rating_avg = rating_products.aggregate(Avg('rate'))
     rating_count = rating_products.count()
+    favorited = False
+
+    if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+
+        if profile.favorites.filter(id=product_id).exists():
+            favorited = True
 
     context = {
         'product': product,
         'rating_products': rating_products,
         'rating_avg': rating_avg,
         'rating_count': rating_count,
+        'favorited': favorited,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -175,3 +185,13 @@ def rating_products(request, product_id):
     }
 
     return render(request, template, context)
+
+
+def add_product_to_like(request, product_id):
+    product = Product.objects.get(product_id=product_id)
+    user = request.user
+    profile = Profile.objects(user=user)
+
+    profile.favorites.add(Product.name)
+
+    return redirect(reverse('product_detail', args=[product.id]))
