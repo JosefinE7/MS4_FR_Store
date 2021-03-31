@@ -212,5 +212,6 @@ def add_product_to_like(request, product_id):
     profile = UserProfile.objects.get(user=user)
 
     profile.favorites.add(product)
+    messages.success(request, 'Your like has been added!')
 
     return redirect(reverse('product_detail', args=[product.id]))
