@@ -568,6 +568,9 @@ I am excited to truly start experimenting with a lot more different browsers whe
 
 
 ## Deployment
+
+Deployment follows steps provided to me by Code Institute
+
 Cloning the MS4_FR_Store to GitHub Desktop using Windows Explorer: 
 To deploy this page to your own GitHub Pages navigate to my [Github Repositiy, you can find it by clicking here](https://github.com/JosefinE7/MS4_FR_Store), below is a step by step process allowing you to clone the project and make it your own. 
 1. Before you start make sure to sign in to GitHub or GitHub Desktop before you begin the process of cloning the project.
@@ -702,7 +705,7 @@ Dealing with hidden files and deploying to Heroku:
 1. Copy the policy into the bucket policy editor.
 1. Before clicking Save add a slash star here: /* . You do this to allow access to all resources in this bucket.
 1. Click Save.
-1.  Next, in the Permission tab pick the Access Control List option.
+1. Next, in the Permission tab pick the Access Control List option.
 
 #### IAM 
 1. Go back to the services menu and search for IAM.
@@ -772,7 +775,7 @@ is done (if there are not any issues) you will get a ‘Your app was successfull
 1. After this go back to your Git workspace and commit and push the project 
 1. If you look in the Heroku Activities section you can see this triggered an automatic deployment to Heroku.
 1. The build is done you should be able to see that all the static files were collected successfully.
-1.Go to S3 on AWS.
+1. Go to S3 on AWS.
 1. You should now be able to see a static folder in your bucket with all your static files in it
 Last Heroku thing:
 1. For the STRIPE_WH_SECRET go back to Stripe and repeat the same webhook url process as earlier but 
@@ -788,7 +791,7 @@ and add  STRIPE_WH_SECRET with new Heroku value to Config Vars.
 1. Click the media folder.
 1. Click Upload.
 1. Click Add files.
-1.Select all images and then click Open.
+1. Select all images and then click Open.
 1. Then click Next.
 1. Under Manage Public permissions pick Grant public read access to this object.
 1. Click Next.
@@ -802,6 +805,8 @@ on my project! Happy coding!
 ## Credits
 
 ### Content
+
+Text on about page copied from: https://www.futurelearn.com/info/courses/sustainable-fashion/0/steps/13558
 
 ### Media
 
