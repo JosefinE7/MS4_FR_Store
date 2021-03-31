@@ -11,7 +11,7 @@
     <div>
         <div class="col my-auto">
             <h2 class="logo-font text-center">Products</h2>
-            <hr class="hr-heading-beige w-25">
+            <hr class="hr-heading-green w-25">
             <div class="d-flex justify-content-center">
                 {% for c in current_categories %}
                 <a class="category-badge text-decoration-one px-1" 
@@ -108,22 +108,22 @@
                 </div>
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mt-3 mb-3">
-                    <hr class="hr-sm-grey">
+                    <hr class="hr-heading-black w-75">
                 </div>
                 {% endif %}
                 {% if forloop.counter|divisibleby:2 %}
                 <div class="col-12 d-none d-sm-block d-md-block d-lg-none mt-3 mb-3">
-                    <hr class="hr-sm-grey">
+                    <hr class="hr-heading-black w-75">
                 </div>
                 {% endif %}
                 {% if forloop.counter|divisibleby:3 %}
                 <div class="col-12 d-none d-lg-block d-xl-none mt-3 mb-3">
-                    <hr class="hr-sm-grey">
+                    <hr class="hr-heading-black w-75">
                 </div>
                 {% endif %}
                 {% if forloop.counter|divisibleby:4 %}
                 <div class="col-12 d-none d-xl-block mt-3 mb-3">
-                    <hr class="hr-sm-grey">
+                    <hr class="hr-heading-black w-75">
                 </div>
                 {% endif %}
                 {% endfor %}

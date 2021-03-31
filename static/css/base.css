@@ -72,14 +72,6 @@ body {
     background: #000 !important; 
 }
 
-.hr-heading-beige {
-	border-top: 2px dashed #F5F5DC;
-}
-
-.hr-sm-grey {
-	border-top: 1px dashed #F5F5DC;
-}
-
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
@@ -102,7 +94,37 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* -------------------------------- Bootstrap toasts */
+/* Different hr styling */
+
+.hr-heading-black {
+	border-top: 2px dashed #000;
+}
+
+.hr-heading-beige {
+	border-top: 2px dashed #F5F5DC;
+}
+
+.hr-heading-blue {
+	border-top: 2px dashed #007bff;
+}
+
+.hr-heading-pink {
+	border-top: 2px dashed #FF69B4;
+}
+
+.hr-heading-green {
+	border-top: 2px dashed #28a745;
+}
+
+.hr-heading-yellow {
+	border-top: 2px dashed #ffc107;
+}
+
+.hr-heading-mauve {
+	border-top: 2px dashed #BC8F8F;
+}
+
+/* Bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -120,6 +142,7 @@ a.category-badge > span.badge:hover {
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+
 .arrow-up {
     width: 0; 
     height: 0; 
@@ -176,7 +199,7 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
-/* -------------------------------- Allauth form formatting */
+/*  Allauth form formatting */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
@@ -230,7 +253,7 @@ a.category-badge > span.badge:hover {
 	color: #17a2b8; /* text-info */
 }
 
-/* -------------------------------- Home page specific */
+/* -------------------------------- Home page - Hero specific */
 .home-page-item {
     margin-bottom: 50px;
     margin-left: auto;
@@ -249,8 +272,9 @@ a.category-badge > span.badge:hover {
     text-shadow: 2px 2px 4px beige, 0 0 4px #fff;
 }
 
-/* ---------------- Home page - Instagram specific
-  copied from https://juicer.io/blog/create-a-custom-embeddable-aggregate-social-media-feed-with-css-and-juicer  */
+/* ---------------- Home page - Instagram specific copied from 
+  https://juicer.io/blog/create-a-custom-embeddable-aggregate-social-media-feed-with-css-and-juicer  
+*/
 
 
 .juicer-feed li.feed-item {
@@ -282,7 +306,7 @@ a.category-badge > span.badge:hover {
     font-family: 'Special Elite';
 }
 
-/* ----------------- Home page - Owl Carousel */
+/* ----------------- Home page - Owl Carousel specific */
 
 .owl-carousel .nav-btn{
       height: 47px;
