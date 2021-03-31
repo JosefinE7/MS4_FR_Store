@@ -49,7 +49,9 @@
                             </div>
                             <div class="col-12 col-sm-6 order-sm-last">
                                 <p class="my-0">${{ item.product.price }}</p>
-                                <p><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                <p><strong>Subtotal: </strong>
+                                    ${{ item.product.price | calc_subtotal:item.quantity }}
+                                </p>
                             </div>
                             <div class="col-12 col-sm-6">
                                 {% include 'bag/quantity-form.html' %}
