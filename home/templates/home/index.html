@@ -96,7 +96,10 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ product.name }}</h5>
                             <p class="card-text">${{ product.price }}</p>
-                            <a href="{% url 'product_detail' product.id %}" class="btn btn-primary">Product Detail</a>
+                            <a href="{% url 'product_detail' product.id %}" 
+                                class="btn btn-outline-black btn rounded-0 text-uppercase py-2">
+                                Product Detail
+                            </a>
                         </div>
                     </div>
                 </div>
