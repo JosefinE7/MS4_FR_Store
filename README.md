@@ -140,7 +140,7 @@ the impression of a homemade and cozy aesthetic.
 ### Wireframes
 
 * About page:
-    * [Large screen](https://ibb.co/5M8mwWJ)
+    * [Large screen](#)
     * [Medium screen](https://ibb.co/w44q78r)
     * [Small screen](https://ibb.co/q9j5sGK)
 * Bag view:
