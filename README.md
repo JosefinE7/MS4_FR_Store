@@ -543,7 +543,8 @@ Register with already existing user:
 1. Click anchor 
 1.Clicking anchor brings me to Sign In page
 1. Test successful 
-1. Testing of my page is a lot more 
+
+I am sorry to say that my poor time management led to me not being able to document my testing properly. I have thoroughly tested my website, but I was unable to document it properly and I understand that is a grave mistake on my part. For that I apologize,  there is nothing else I can say then I will learn from this and not repeat the same mistake in my next project. 
 
 ### Bugs
 **Emails**
