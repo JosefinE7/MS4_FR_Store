@@ -2,7 +2,8 @@ from django.contrib import admin
 from .models import Order, OrderLineItem
 
 """
-    Entire code written by following Code Institute Boutique Ado project
+    Entire code written following Code Institutes Boutique Ado project
+    https://github.com/ckz8780/boutique_ado_v1
 
 """
 

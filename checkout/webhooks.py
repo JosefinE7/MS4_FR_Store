@@ -8,6 +8,13 @@ from checkout.webhook_handler import StripeWH_Handler
 import stripe
 
 
+"""
+    Entire code written following Code Institutes Boutique Ado project
+    https://github.com/ckz8780/boutique_ado_v1
+
+"""
+
+
 @require_POST
 @csrf_exempt
 def webhook(request):

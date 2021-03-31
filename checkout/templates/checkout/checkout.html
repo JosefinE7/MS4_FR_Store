@@ -6,11 +6,13 @@
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
-<!-- Entire code written following Code Institutes Boutique Ado project -->
+<!-- 
+    Entire code written following Code Institutes Boutique Ado project
+    https://github.com/ckz8780/boutique_ado_v1
+-->
 
 {% block content %}
 <div class="container-fluid products-baner ">
-    <!--container mb-2-->
     <div class="row">
         <div class="col my-auto">
             <hr class="w-25 hr-heading-beige">
@@ -35,9 +37,11 @@
                     <div class="col-2 mb-1">
                         <a href="{% url 'product_detail' item.product.id %}">
                             {% if item.product.image %}
-                            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                            <img class="w-100" src="{{ item.product.image.url }}" 
+                                alt="{{ product.name }}">
                             {% else %}
-                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" 
+                                alt="{{ product.name }}">
                             {% endif %}
                         </a>
                     </div>
@@ -48,7 +52,9 @@
                         <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        <p class="my-0 small text-muted">
+                            ${{ item.product.price | calc_subtotal:item.quantity }}
+                        </p>
                     </div>
                 </div>
                 {% endfor %}
@@ -62,7 +68,9 @@
                     <div class="col-3">
                         <p class="my-0">${{ total | floatformat:2 }}</p>
                         <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                        <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                        <p class="my-0">
+                            <strong>${{ grand_total | floatformat:2 }}</strong>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -86,18 +94,27 @@
                         {{ order_form.country | as_crispy_field }}
                         <div class="form-check form-check-inline float-right mr-0">
                             {% if user.is_authenticated %}
-                            <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
-                            <input class="form-check-input ml-2 mr-0" type="checkbox" name="save-info" id="id-save-info" checked>
+                            <label class="form-check-label" for="id-save-info">
+                                Save this delivery information to my profile
+                            </label>
+                            <input class="form-check-input ml-2 mr-0" type="checkbox" 
+                                name="save-info" id="id-save-info" checked>
                             {% else %}
                             <label class="form-check-label" for="id-save-info">
-                                <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> |
-                                <a class="text-info" href="{% url 'account_login' %}">Login</a> to save this information
+                                <a class="text-info" href="{% url 'account_signup' %}">
+                                    Create an account
+                                </a> |
+                                <a class="text-info" href="{% url 'account_login' %}">
+                                    Login
+                                </a> to save this information
                             </label>
                             {% endif %}
                         </div>
                     </fieldset>
                     <fieldset class="px-3">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                        <legend class="fieldset-label small text-black px-2 w-auto">
+                            Payment
+                        </legend>
                         <!-- Stripe element -->
                         <div class="mb-3" id="card-element"></div>
                         <!-- Used to display form errors -->
@@ -122,7 +139,9 @@
                             <span class="icon">
                                 <i class="fas fa-exclamation-circle"></i>
                             </span>
-                            <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                            <span>Your card will be charged 
+                                <strong>${{ grand_total|floatformat:2 }}</strong>
+                            </span>
                         </p>
                     </div>
                 </form>

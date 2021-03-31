@@ -4,7 +4,8 @@ from django.dispatch import receiver
 from .models import OrderLineItem
 
 """
-    Entire code written by following Code Institute Boutique Ado project
+    Entire code written following Code Institutes Boutique Ado project
+    https://github.com/ckz8780/boutique_ado_v1
 
 """
 
