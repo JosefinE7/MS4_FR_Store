@@ -139,44 +139,54 @@ the impression of a homemade and cozy aesthetic.
 
 ### Wireframes
 
-* About page:
-    * [Large screen](#)
-    * [Medium screen](https://ibb.co/w44q78r)
-    * [Small screen](https://ibb.co/q9j5sGK)
-* Bag view:
-    * [Large screen](https://ibb.co/42dwyXr)
-    * [Medium screen](https://ibb.co/wQxL4Pn)
-    * [Small screen](https://ibb.co/YXjDF1V)
-* Home page view:
-    * [Large screen](https://ibb.co/TKZBJng)
-    * [Large screen all dropdownbars open](https://ibb.co/tZ0B9YP)
-    * [Medium screen](https://ibb.co/nfvFt6k)
-    * [Small screen](https://ibb.co/fDWTCTb)
-* Likes view:
-    * [Large screen](https://ibb.co/hL7yxcm)
-    * [Medium screen](#)
-    * [Small screen](#)
-* Log in/Register view:
-    * [Large screen](https://ibb.co/CM8jzBB)
-    * [Medium screen](https://ibb.co/K69Y0g6)
-    * [Small screen](https://ibb.co/fdZnpRY)
-* Payment view:
-    * [Large screen](https://ibb.co/qW80Cpj)
-    * [Medium screen](#)
-    * [Small screen](#)
-* Personal page view:
-    * [Large screen](https://ibb.co/1zYgn64)
-    * [Medium screen](#)
-    * [Small screen](#)
-* Product detail page view:
-    * [Large screen](https://ibb.co/pyyVQ9h)
-    * [Medium screen](https://ibb.co/4MSNwmr)
-    * [Small screen](https://ibb.co/Rcqgg12)
-* Product page view:
-    * [Large screen](https://ibb.co/3Ts31Yn)
-    * [Medium screen](https://ibb.co/ZJRMSbs)
-    * [Small screen](https://ibb.co/QcH27mt)
+The wireframes I created for this project were all made in Balsamiq Wireframes and each link 
+represents different screen sizes and parts of the website. 
 
+I would like to deeply apologize about the size of these wireframes when looking at them on my 
+GitHub repository. This is something I noticed when linking them to my README and by that time 
+it was too late and I simply didn’t have enough time for resizing. I will not make this mistake 
+again in future projects. 
+
+
+* About page:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/About_company_large_screen.jpg)
+    * [Medium screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/About%20page%20medium%20(Alternate%20967l).jpg)
+    * [Small screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/About%20small%20screen.jpg)
+* Bag view:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Bag_view_large_screen.jpg)
+    * [Medium screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Bag%20view%20medium%20screen.jpg)
+    * [Small screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Bag%20view%20small%20screen.jpg)
+* Home page view:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Home_page_large_screen.jpg)
+    * [Large screen all dropdownbars open](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Home_page_all_dropdowns_open_large_screen.jpg)
+    * [Medium screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Home_page_medium_screen.jpg)
+    * [Small screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Home_page_small_screen.jpg)
+* Likes view:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Likes_view_large_screen.jpg)
+    * [Medium screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/like%20template%20medium%20screen.jpg)
+    * [Small screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/like%20template%20small%20screen.jpg)
+* Log in/Register view:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/log_In_register%20large%20screen.jpg)
+    * [Medium screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/log_In_register%20medium%20screen.jpg)
+    * [Small screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/log_In_register%20small%20screen%20copy.jpg)
+* Payment view:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Payment_page_large_screen.jpg)
+    * [Medium screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/payment%20page%20medium%20screen.jpg)
+    * [Small screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/payment%20page%20small%20screen.jpg)
+* Personal page view:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Personal_page_large_screen.jpg)
+    * [Medium screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/personal%20page%20medium%20screen.jpg)
+    * [Small screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/personal%20page%20small%20screen.jpg)
+* Product detail page view:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Product_details_large_screen.jpg)
+    * [Medium screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Product_detail_medium_screen.jpg)
+    * [Small screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Product_detail_small_screen.jpg)
+* Product page view:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Products_page_large_screen.jpg)
+    * [Medium screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Products_page_medium_view.jpg)
+    * [Small screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/Products_page_small_screen.jpg)
+* Admin add product view:
+    * [Large screen](https://github.com/JosefinE7/MS4_FR_Store/blob/master/media/wireframes/admin%20add%20product%20large%20screen%20.jpg)
 
 ## Features
 
