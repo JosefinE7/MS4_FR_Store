@@ -121,7 +121,7 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'future_retro.wsgi.application'
 
 
-# Database
+# Database information
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
