@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
-<!-- Entire code written following Code Institutes Boutique Ado project -->
+<!-- 
+    Entire code written following Code Institutes Boutique Ado project
+    https://github.com/ckz8780/boutique_ado_v1
+-->
 
 {% block content %}
 <div class="container-fluid products-baner ">
@@ -17,7 +20,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 offset-lg-3">
-                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'edit_product' product.id %}" 
+                        class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="text-right">

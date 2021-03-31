@@ -1,18 +1,25 @@
 {% extends "base.html" %}
 {% load static %}
 
+<!-- 
+    Entire code written following Code Institutes Boutique Ado project
+    https://github.com/ckz8780/boutique_ado_v1
+-->
+
 {% block content %}
 <div class="container-fluid products-baner">
     <div>
-        <!--d-flex justify-content-center || class="row" previous extra code-->
         <div class="col my-auto">
             <h2 class="logo-font text-center">Products</h2>
             <hr class="hr-heading-beige w-25">
             <div class="d-flex justify-content-center">
                 {% for c in current_categories %}
-                <a class="category-badge text-decoration-one px-1" href="{% url 'products' %}?category={{ c.name }}">
+                <a class="category-badge text-decoration-one px-1" 
+                    href="{% url 'products' %}?category={{ c.name }}">
                     <span
-                        class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">
+                        {{ c.friendly_name }}
+                    </span>
                 </a>
                 {% endfor %}
             </div>
@@ -24,17 +31,23 @@
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector"
-                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                            class="custom-select custom-select-sm rounded-0 border border
+                                -{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>
+                                Sort by...
                             </option>
-                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
-                                (low to high)</option>
-                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
-                                (high to low)</option>
-                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
-                                (A-Z)</option>
-                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
-                                (Z-A)</option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>
+                                Price (low to high)
+                            </option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>
+                                Price (high to low)
+                            </option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>
+                                Name (A-Z)
+                            </option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>
+                                Name (Z-A)
+                            </option>
                             <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
                                 Category (A-Z)</option>
                             <option value="category_desc"
@@ -84,7 +97,8 @@
                                     {% if request.user.is_superuser %}
                                         <small class="ml-3">
                                             <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                            <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                            <a class="text-danger" 
+                                                href="{% url 'delete_product' product.id %}">Delete</a>
                                         </small>
                                     {% endif %}
                                 </div>

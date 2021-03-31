@@ -19,12 +19,13 @@
                         <div class="card h-100">
                             {% if list_item.image %}
                             <a>
-                                <img class="card-img-top img-fluid" src="{{ list_item.image.url }}" alt="{{ list_item.name }}">
+                                <img class="card-img-top img-fluid" src="{{ list_item.image.url }}" 
+                                        alt="{{ list_item.name }}">
                             </a>
                             {% else %}
                             <a>
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
-                                    alt="{{ list_item.name }}">
+                                        alt="{{ list_item.name }}">
                             </a>
                             {% endif %}
                             <div class="card-body pb-0">
@@ -33,7 +34,9 @@
                             <div class="card-footer bg-white pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        <p class="lead mb-0 text-left font-weight-bold">${{ list_item.price }}</p>
+                                        <p class="lead mb-0 text-left font-weight-bold">
+                                            ${{ list_item.price }}
+                                        </p>
                                         {% if list_item.category %}
                                         <p class="small mt-1 mb-0">
                                             <a class="text-muted"
@@ -46,7 +49,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <a href="{% url 'product_detail' list_item.id %}" class="btn-outline-black btn rounded-0 text-uppercase my-2 py-2">
+                                        <a href="{% url 'product_detail' list_item.id %}" 
+                                            class="btn-outline-black btn rounded-0 text-uppercase my-2 py-2">
                                             Add To <i class="fas fa-lg fa-shopping-bag"></i>
                                         </a>
                                     </div>

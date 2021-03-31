@@ -14,11 +14,13 @@
                 <div class="">
                     {% if product.image %}
                     <a href="{{ product.image.url }}" target="_blank">
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        <img class="card-img-top img-fluid" 
+                            src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
                     {% else %}
                     <a href="">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        <img class="card-img-top img-fluid" 
+                            src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     </a>
                     {% endif %}
                 </div>
@@ -30,7 +32,8 @@
                 <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
-                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                    <a class="text-muted" 
+                        href="{% url 'products' %}?category={{ product.category.name }}">
                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                     </a>
                 </p>
@@ -64,8 +67,9 @@
                     <div class="form-row">
                         <div class="form-group">
                             <div class="input-group">
-                                <input class="form-control qty_input" type="hidden" name="quantity_like" value="1"
-                                    min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_like_{{ product.id }}">
+                                <input class="form-control qty_input" type="hidden" 
+                                    name="quantity_like" value="1" min="1" max="99"
+                                    data-item_id="{{ product.id }}" id="id_qty_like_{{ product.id }}">
                             </div>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -78,7 +82,8 @@
                         {% if s %}
                         <div class="col-12">
                             <p><strong>Size:</strong></p>
-                            <select class="form-control rounded-0 w-50" name="product_size" id="id_product_size">
+                            <select class="form-control rounded-0 w-50" name="product_size" 
+                                    id="id_product_size">
                                 <option class=" mt-2" value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m" selected>M</option>
@@ -99,8 +104,9 @@
                                             </span>
                                         </button>
                                     </div>
-                                    <input class="form-control qty_input" type="number" name="quantity" value="1"
-                                        min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+                                    <input class="form-control qty_input" type="number" name="quantity" 
+                                            value="1" min="1" max="99" data-item_id="{{ product.id }}" 
+                                            id="id_qty_{{ product.id }}">
                                     <div class="input-group-append">
                                         <button class="increment-qty btn btn-black rounded-0"
                                             data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
@@ -119,7 +125,8 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <button type="submit" class="btn btn-black btn-outline-black rounded-0 text-uppercase mt-5">
+                            <button type="submit" 
+                                    class="btn btn-black btn-outline-black rounded-0 text-uppercase mt-5">
                                 Add to Bag
                                 <span class="icon">
                                     <i class="fas fa-shopping-bag"></i>
@@ -135,8 +142,10 @@
         </div>
     </div>
 </div>
-<!-- Code structre from byronlara5 in django_imdb_youtube on GitHub
-                        https://github.com/byronlara5/django_imdb_youtube/blob/master/imdb_clone/templates/movie_details.html-->
+<!-- 
+    Code structre from byronlara5 in django_imdb_youtube on GitHub
+    https://github.com/byronlara5/django_imdb_youtube/blob/master/imdb_clone/templates/movie_details.html
+-->
 <div class="container">
     <h3 class="text-center pt-3">Product Ratings</h3>
     <hr class="hr-heading-beige w-25">
@@ -157,7 +166,8 @@
                     <div class="card  rounded-0">
                         <div class="card-header bg-black border-black" id="headingOne">
                             <h2 class="mb-0 ">
-                                <button class="btn text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="btn text-light" type="button" data-toggle="collapse" 
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     <strong>
                                         <i class="fas fa-user fa-lg"></i> @{{ rating_product.user.username }} | 
                                         Item Rating: {{ rating_product.rate }} / 5<icon class="fas fa-star"></icon>
@@ -165,7 +175,8 @@
                                 </button>
                             </h2>
                         </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" 
+                                data-parent="#accordionExample">
                             <div class="card-body border-black">
                                 <i class="fas fa-pen fa-lg"></i> {{ rating_product.rate_comment }}
                             </div>

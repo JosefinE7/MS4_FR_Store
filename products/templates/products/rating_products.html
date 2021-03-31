@@ -1,7 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
-<!-- Entire code written following Code Institutes Boutique Ado project -->
+<!-- 
+    Entire code written following Code Institutes Boutique Ado project
+    https://github.com/ckz8780/boutique_ado_v1
+-->
 
 {% block content %}
 <div class="container-fluid products-baner ">
@@ -35,15 +38,18 @@
                     </div>
                 </div>
             </div>
-            <form method="POST" action="{% url 'rating_products' product.id %}" class="form mb-2">
+            <form method="POST" action="{% url 'rating_products' product.id %}" 
+                    class="form mb-2">
                 {% csrf_token %}
                 {{ form | crispy }}
                 {% if request.user.is_authenticated %}
                     <div class="text-center">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'product_detail' product.id %}">
+                        <a class="btn btn-outline-black rounded-0" 
+                            href="{% url 'product_detail' product.id %}">
                             Cancel
                         </a>
-                        <button class="btn btn-outline-black rounded-0" type="submit"><!--name="action"-->
+                        <button class="btn btn-outline-black rounded-0" 
+                                    type="submit">
                             Add Review
                         </button>
                     </div>

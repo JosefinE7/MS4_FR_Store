@@ -163,6 +163,7 @@ def delete_product(request, product_id):
 
 @login_required
 def rating_products(request, product_id):
+    """ Gives the ability for members to rate products """
     product = get_object_or_404(Product, pk=product_id)
     user = request.user
 
@@ -189,6 +190,7 @@ def rating_products(request, product_id):
 
 @login_required
 def liked_product(request):
+    """ Returns the liked template and displays liked items """
     product = Product.objects.all()
     user = request.user
     profile = UserProfile.objects.get(user=user)
@@ -207,6 +209,7 @@ def liked_product(request):
 
 @login_required
 def add_product_to_like(request, product_id):
+    """ Adds liked member items to liked template """
     product = Product.objects.get(id=product_id)
     user = request.user
     profile = UserProfile.objects.get(user=user)
