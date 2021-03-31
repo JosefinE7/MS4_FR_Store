@@ -10,8 +10,12 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">
+                    By Price
+                </a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">
+                    By Category
+                </a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -26,7 +30,8 @@
                 <a href="{% url 'products' %}?category=blouses" class="dropdown-item">Blouses</a>
                 <a href="{% url 'products' %}?category=skirts" class="dropdown-item">Skirts</a>
                 <a href="{% url 'products' %}?category=jackets" class="dropdown-item">Jackets</a>
-                <a href="{% url 'products' %}?category=dresses,blouses,skirts,jackets" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=dresses,blouses,skirts,jackets" 
+                    class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
@@ -39,7 +44,8 @@
                 <a href="{% url 'products' %}?category=necklaces" class="dropdown-item">Necklaces</a>
                 <a href="{% url 'products' %}?category=bracelets" class="dropdown-item">Bracelets</a>
                 <a href="{% url 'products' %}?category=earrings" class="dropdown-item">Earrings</a>
-                <a href="{% url 'products' %}?category=necklaces,bracelets,earrings" class="dropdown-item">All Jewelry</a>
+                <a href="{% url 'products' %}?category=necklaces,bracelets,earrings" 
+                    class="dropdown-item">All Jewelry</a>
             </div>
         </li>
 
@@ -49,12 +55,17 @@
                 Specials
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,clearance" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">
+                    New Arrivals
+                </a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">
+                    Clearance
+                </a>
+                <a href="{% url 'products' %}?category=new_arrivals,clearance" class="dropdown-item">
+                    All Specials
+                </a>
             </div>
         </li>
-
         <li class="nav-item">
             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'about' %}">
                 About
@@ -68,7 +79,8 @@
                         <input class="form-control border border-black rounded-0" type="text" name="q"
                             placeholder="Search our site">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <button class="form-control btn btn-black border border-black rounded-0" 
+                                    type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
